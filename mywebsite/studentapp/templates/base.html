@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Student App
+        </title>
+        <style>
+            body{
+                margin:10px;
+                padding:10px;
+                font-family: 'Courier New', Courier, monospace;
+                background: hwb(61 67% 1%);;
+            }
+            .menu{
+                background: #e72b2b;
+                padding: 15px;
+            }
+            .menu a{
+                color: rgb(229, 255, 0);
+                text-decoration: wavy;
+                margin-right: 20px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="/home/">
+                Home
+            </a>
+            <a href="/about/">
+                About us
+            </a>
+            <a href="/contact/">
+                Contact us
+            </a>
+        </div>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
